@@ -41,7 +41,7 @@ describe('Pruebas en Searchpage', () => {
         expect(img.src).toContain('/assets/heroes/dc-batman.jpg');
         
         //div que tiene display none como estilo, yo no lo hice asi
-        // const alert = screen.getByLabelText('alert-danger');
+        // const alert = screen.getByLabelText('alert-danger'); //aria-label
         // expect(alert.style.display).toBe('none');
 
     });
