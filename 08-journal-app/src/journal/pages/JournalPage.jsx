@@ -6,8 +6,8 @@ import { NoteView, NothingSelectedView } from "../views"
 export const JournalPage = () => {
   return (
     <JournalLayout>
-        {/* <NothingSelectedView /> */}
-        <NoteView />
+        <NothingSelectedView />
+        {/* <NoteView /> */}
 
         <IconButton 
           size='large' 
