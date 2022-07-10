@@ -16,7 +16,8 @@ router.post(
     ], 
     crearUsuario);
 
-router.post('/', 
+router.post(
+    '/', 
     [
         check('email', 'El email es obligatorio').isEmail(),
         check('password', 'El password debe de ser de 8 caracteres minimo').isLength({min: 8}),

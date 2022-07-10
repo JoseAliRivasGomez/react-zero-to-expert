@@ -17,6 +17,7 @@ app.use(express.static('public'));
 app.use(express.json());
 
 app.use("/api/auth", require('./routes/auth.router'));
+app.use("/api/events", require('./routes/events.router'));
 
 app.listen(port, () => {
     console.log(`Calendar app server listening on port ${port}`);
