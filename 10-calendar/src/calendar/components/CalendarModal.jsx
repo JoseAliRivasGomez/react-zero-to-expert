@@ -84,7 +84,7 @@ export const CalendarModal = () => {
             return;
         }
 
-        console.log(formValues);
+        //console.log(formValues);
 
         await startSavingEvent(formValues);
         closeDateModal();
