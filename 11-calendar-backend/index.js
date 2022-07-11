@@ -20,7 +20,7 @@ app.use("/api/auth", require('./routes/auth.router'));
 app.use("/api/events", require('./routes/events.router'));
 
 app.get('*', (req, res) => {
-    res.sendFile( __dirname + 'public/index.html');
+    res.sendFile( __dirname + '/public/index.html');
 })
 
 app.listen(port, () => {
