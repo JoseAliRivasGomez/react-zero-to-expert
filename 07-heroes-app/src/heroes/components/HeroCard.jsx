@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 
+//import logo from '../../favicon.svg' // relative path to image 
+
 export const HeroCard = ({id, superhero, publisher, alter_ego, first_appearance, characters}) => {
 
-    const heroImageURL = `/assets/heroes/${id}.jpg`;
+    const heroImageURL = `/${id}.jpg`;
 
     return (
         <>
@@ -28,7 +30,7 @@ export const HeroCard = ({id, superhero, publisher, alter_ego, first_appearance,
                             </p>
 
                             <Link to={`/hero/${id}`}>
-                                Mas informacion...  
+                                More information...  
                             </Link>
                             
                         </div>
